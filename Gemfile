@@ -23,6 +23,19 @@ gem "jbuilder"
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 
+# my gems for forms and authietication 
+gem "devise",       "~> 4.9"
+gem "simple_form",  "~> 5.3"
+
+# this is for the styling
+gem "bootstrap",    "~> 5.3"
+
+# errors in git bash looking for this, will keep here if it resolves it
+gem "sassc-rails", "~> 2.1"
+
+# im not using this but i keep getting an error, so hopefully this helps fix it at bundling stage
+gem "nokogiri",     "~> 1.15", platforms: [:ruby]
+
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
 gem "solid_cache"
 gem "solid_queue"
