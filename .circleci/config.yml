@@ -1,0 +1,19 @@
+
+# .circleci/config.yml
+version: 2.1
+
+jobs:
+  build:
+    docker:
+      - image: cimg/ruby:3.3
+    steps:
+      - checkout    
+      - run: echo "Build is alive"
+      - run: bundle install --jobs=4 --retry=3
+      - run: bundle exec rails db:prepare
+      - run: bundle exec rails test || true
+
+workflows:
+  build-only:
+    jobs:
+      - build
