@@ -14,8 +14,6 @@ class MatchesTest < ApplicationSystemTestCase
     visit matches_url
     click_on "New match"
 
-    fill_in "Player a", with: @match.player_a_id
-    fill_in "Player b", with: @match.player_b_id
     fill_in "Round", with: @match.round
     click_on "Create Match"
 
@@ -27,8 +25,6 @@ class MatchesTest < ApplicationSystemTestCase
     visit match_url(@match)
     click_on "Edit this match", match: :first
 
-    fill_in "Player a", with: @match.player_a_id
-    fill_in "Player b", with: @match.player_b_id
     fill_in "Round", with: @match.round
     click_on "Update Match"
 

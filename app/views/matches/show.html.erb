@@ -1,10 +1,24 @@
 <p style="color: green"><%= notice %></p>
 
-<%= render @match %>
+<div class="card mb-3">
+  <div class="card-header">
+    <h5 class="mb-0">Match details</h5>
+  </div>
 
-<div>
-  <%= link_to "Edit this match", edit_match_path(@match) %> |
-  <%= link_to "Back to matches", matches_path %>
+  <div class="card-body">
+    <%= render @match %>
+  </div>
 
-  <%= button_to "Destroy this match", @match, method: :delete %>
+  <div class="card-footer d-flex gap-2">
+    <%= link_to "Edit this match", edit_match_path(@match),
+                class: "btn btn-sm btn-outline-primary" %>
+
+    <%= link_to "Back to matches", matches_path,
+                class: "btn btn-sm btn-secondary" %>
+
+    <%= button_to "Destroy this match", @match,
+                  method: :delete,
+                  data: { confirm: "Are you sure?" },
+                  class: "btn btn-sm btn-danger ms-auto" %>
+  </div>
 </div>

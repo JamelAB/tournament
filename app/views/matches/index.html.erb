@@ -4,13 +4,30 @@
 
 <h1>Matches</h1>
 
-<div id="matches">
-  <% @matches.each do |match| %>
-    <%= render match %>
-    <p>
-      <%= link_to "Show this match", match %>
-    </p>
-  <% end %>
-</div>
+<table class="table table-striped" id="matches">
+  <thead>
+    <tr>
+      <th>Round</th>
+      <th>Player A</th>
+      <th>Player B</th>
+      <th>Winner</th>
+      <th></th>
+    </tr>
+  </thead>
 
-<%= link_to "New match", new_match_path %>
+  <tbody>
+    <% @matches.each do |match| %>
+      <tr>
+        <td><%= match.round %></td>
+        <td><%= match.player_a.name %></td>
+        <td><%= match.player_b.name %></td>
+        <td><%= match.winner.name %></td>
+        <td>
+          <%= link_to "Show", match, class: "btn btn-sm btn-outline-primary" %>
+        </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<%= link_to "New match", new_match_path, class: "btn btn-primary" %>

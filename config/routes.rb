@@ -12,5 +12,6 @@ Rails.application.routes.draw do
   # get "service-worker" => "rails/pwa#service_worker", as: :pwa_service_worker
 
   # Defines the root path route ("/")
-  # root "posts#index"
+  # default route was posts i think its a placeholder cause i dont have that generated, but i do have players
+  root "players#index"
 end
