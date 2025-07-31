@@ -10,7 +10,7 @@ jobs:
       - checkout    
       - run: echo "Build is alive"
       - run: bundle install --jobs=4 --retry=3
-      - run: bundle exec rails db:prepare
+      - run: bundle exec rake assets:precompile
       - run: bundle exec rails test || true
 
 workflows:
