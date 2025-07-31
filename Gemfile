@@ -38,6 +38,7 @@ gem "nokogiri",     "~> 1.15", platforms: [:ruby]
 
 #i keep getting sproket agrument issues on local host im hoping that adding the gem fixes it
 gem "sprockets-rails"
+gem "dartsass-sprockets"
 
 # Use the database-backed adapters for Rails.cache, Active Job, and Action Cable
 gem "solid_cache"
