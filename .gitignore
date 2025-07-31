@@ -32,3 +32,17 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+# Ignore Rails sqlite databases
+/db/*.sqlite3
+
+# Ignore node modules & yarn
+/node_modules/
+/yarn.lock
+
+# Bundler vendor
+/vendor/bundle
+
+# Byebug temp files, editor backups, OS junk, etc.
+*.swp
+*~
+.DS_Store
