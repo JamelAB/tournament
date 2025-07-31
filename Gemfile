@@ -33,7 +33,7 @@ gem "simple_form",  "~> 5.3"
 gem "bootstrap",    "~> 5.3"
 
 # errors in git bash looking for this, will keep here if it resolves it
-gem "sassc-rails", "~> 2.1"
+#gem "sassc-rails", "~> 2.1"
 
 # im not using this but i keep getting an error, so hopefully this helps fix it at bundling stage
 gem "nokogiri",     "~> 1.15", platforms: [:ruby]
