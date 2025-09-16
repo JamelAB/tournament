@@ -181,9 +181,7 @@ GEM
       net-protocol
     net-ssh (7.3.0)
     nio4r (2.7.4)
-    nokogiri (1.18.9-x64-mingw-ucrt)
-      racc (~> 1.4)
-    nokogiri (1.18.9-x86_64-linux-gnu)
+    nokogiri (1.18.10-x86_64-linux-gnu)
       racc (~> 1.4)
     orm_adapter (0.5.0)
     ostruct (0.6.3)
@@ -382,7 +380,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   kamal
-  nokogiri (~> 1.15)
+  nokogiri (~> 1.18)
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.2)
