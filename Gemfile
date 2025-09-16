@@ -36,7 +36,7 @@ gem "bootstrap",    "~> 5.3"
 #gem "sassc-rails", "~> 2.1"
 
 # im not using this but i keep getting an error, so hopefully this helps fix it at bundling stage
-gem "nokogiri",     "~> 1.15", platforms: [:ruby]
+gem "nokogiri",     "~> 1.18", platforms: [:ruby]
 
 #i keep getting sproket agrument issues on local host im hoping that adding the gem fixes it
 gem "sprockets-rails"
